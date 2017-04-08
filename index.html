@@ -39,7 +39,10 @@
         var options = {
           title: 'Rush Hour Traffic',
           curveType: 'function',
-          vAxis.minValue
+          axes: {
+          x: {
+            0: {side: 'top'}
+          }
         };
 
         var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
