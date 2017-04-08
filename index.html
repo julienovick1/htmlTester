@@ -39,13 +39,13 @@
         var options = {
           title: 'Rush Hour Traffic',
           curveType: 'function',
+          legend: { position: 'none' },
           hAxis: {
                 minValue:0,
                 viewWindow: {
                     min: 0
                 }
-            },
-          legend: { position: 'none' }
+            }   
         };
 
         var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
