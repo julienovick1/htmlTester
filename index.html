@@ -7,7 +7,7 @@
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
           ['Dinosaur', 'Length'],
-          ['Acrocanthosaurus (top-spined lizard)', 12.2]);
+          ['Acrocanthosaurus (top-spined lizard)', 12.2],
           ['Albertosaurus (Alberta lizard)', 9.1],
           ['Allosaurus (other lizard)', 12.2],
           ['Apatosaurus (deceptive lizard)', 22.9],
@@ -37,9 +37,8 @@
           ['Velociraptor (swift robber)', 1.8]]);
 
         var options = {
-          title: 'Rush Hour Times',
+          title: 'Lengths of dinosaurs, in meters',
           legend: { position: 'none' },
-          colors: ['orange'],
         };
 
         var chart = new google.visualization.Histogram(document.getElementById('chart_div'));
