@@ -39,7 +39,9 @@
         var options = {
           title: 'Lengths of dinosaurs, in meters',
           legend: { position: 'none' },
-          colors: ["green"],
+          colors: ['green'],
+          histogram: { lastBucketPercentile: 5 },
+          vAxis: { scaleType: 'mirrorLog' }
         };
 
         var chart = new google.visualization.Histogram(document.getElementById('chart_div'));
